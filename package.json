@@ -7,7 +7,9 @@
     "postbuild": "html-minifier --collapse-whitespace --remove-empty-attributes --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-attribute-quotes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true build/index.html -o build/index.html"
   },
   "dependencies": {
-    "@weborigami/origami": "0.0.62",
+    "@weborigami/origami": "https://gitpkg.vercel.app/WebOrigami/origami/origami?9d552df0",
+    "@weborigami/async-tree": "https://gitpkg.vercel.app/WebOrigami/origami/async-tree?9d552df0",
+    "@weborigami/language": "https://gitpkg.vercel.app/WebOrigami/origami/language?9d552df0",
     "@weborigami/dropbox": "0.0.4",
     "html": "github:jimniels/html",
     "html-minifier": "^4.0.0",
