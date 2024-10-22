@@ -6,7 +6,7 @@
     "build": "ori @copy src/site.ori, @clean @files/build"
   },
   "dependencies": {
-    "@weborigami/dropbox": "0.0.8",
+    "@weborigami/dropbox": "https://gitpkg.vercel.app/WebOrigami/extensions/dropbox?main",
     "@weborigami/origami": "0.0.70",
     "dotenv": "^16.4.5",
     "html": "github:jimniels/html",
