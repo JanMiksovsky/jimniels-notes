@@ -1,0 +1,9 @@
+// Given the same input as Page.ori.html, return a pseudo-random post id
+(_) => {
+  // Create a random-number-generating function based on the children text
+  randomNumberGenerator: random.js(_.children)
+  // Get a random index into the site items
+  random_index: Math.floor(randomNumberGenerator() * _.site.items.length)
+  // Get the ID of the random item, replacing "T" with "-" for legacy IDs
+  random_id: _.site.items[random_index].id.replace("T", "-")
+}.random_id

@@ -62,7 +62,7 @@
       > -->
       <!-- prettier-ignore -->
       <a
-        href="#"
+        href="/n/${ randomId.ori(_) }/"
         title="Shuffle (jump to random note)"
         aria-label="Shuffle (jump to random note)"
         id="js-shuffle"
@@ -98,20 +98,6 @@
       >
     </footer>
     ` : ''}
-
-    <!-- Handles the shuffle link -->
-    <script type="module">
-      // Get all the post IDs
-      // @TODO: remove when all posts have been converted from `T` format
-      const postsIds = ${JSON.stringify(Tree.plain(Tree.map(_.site.items, (post) => post.id.includes("T") ? post.id.replace("T", "-") : post.id)))};
-
-      // Randomly select one of the postsIds
-      const randomPostId = postsIds[Math.floor(Math.random() * postsIds.length)];
-
-      // Set the href
-      const $a = document.querySelector("#js-shuffle");
-      if ($a) $a.href = "/n/" + randomPostId + "/";
-    </script>
 
     <!-- Handles the edit link for my own personal use -->
     <script src="/edit-link.js" type="module"></script>
